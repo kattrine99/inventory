@@ -18,8 +18,8 @@ function addProduct(){
         alert ('Wrong input, Try again!');
     }else{
         const newTag = document.createElement("span");
-        newTag.innerHTML = `Тип продукта: ${ProductList.type} Название продукта: ${ProductList.name} количество: ${ProductList.count}`;
-        productItemContainer.appendChild(newTag);
+        newTag.textContent = `Тип продукта: ${ProductList.type} Название продукта: ${ProductList.name} количество: ${ProductList.count}`;
+        productItemContainer.append(newTag);
     }
 }
 
